@@ -1,0 +1,57 @@
+market = USDT
+
+enabled_pairs = ALL
+max_trading_pairs = 20
+trading_pairs_buy_priority = VOLUMEDESC
+pair_min_listed_days = 30
+
+DEFAULT_trading_enabled = true
+
+DEFAULT_DCA_enabled = -25
+
+DEFAULT_initial_cost = 1%
+
+DEFAULT_buy_margin_type = CROSSED
+DEFAULT_buy_leverage = 10
+AUTO_LEVERAGE_CALCULATION = true
+
+DEFAULT_min_buy_volume = TOP50
+DEFAULT_max_buy_spread = 0.5
+
+DEFAULT_sell_wall_orderbook_depth = 20
+DEFAULT_sell_wall_diff_percentage = 600
+DEFAULT_min_orderbook_volume_percentage = 150
+DEFAULT_min_orderbook_price_slippage_percentage = 0.5
+orderbook_profit_calculation = true
+DEFAULT_buy_max_change_percentage = 8
+DEFAULT_buy_min_change_percentage = -8
+
+DEFAULT_A_buy_strategy_label = RSI
+DEFAULT_A_buy_strategy = RSI
+
+DEFAULT_B_buy_strategy_label = RSI1
+DEFAULT_B_buy_strategy = RSI
+
+DEFAULT_C_buy_strategy_label = RSI2
+DEFAULT_C_buy_strategy = RSI
+
+DEFAULT_D_buy_strategy = EMALINE
+DEFAULT_D_buy_value = 0.000001
+
+DEFAULT_buy_strategy_formula = (SA > SB) && (SB > SC) && (SA < 70) && D
+
+DEFAULT_trailing_buy = 0.25
+DEFAULT_trailing_buy_reset_with_strategies = true
+
+DEFAULT_A_sell_strategy = GAIN
+DEFAULT_B_sell_strategy = ATRPERCENTAGE
+DEFAULT_sell_strategy_formula = SA > SB
+DEFAULT_trailing_profit = SA * 0.125
+DEFAULT_SO1_take_profit_target = SB * 0.25
+DEFAULT_SO1_take_profit_portion = 25
+DEFAULT_SO2_take_profit_target = SB * 0.50
+DEFAULT_SO2_take_profit_portion = 33.33
+DEFAULT_SO3_take_profit_target = SB * 0.75
+DEFAULT_SO3_take_profit_portion = 50
+DEFAULT_trailing_stop_loss_trigger_arm = 3
+DEFAULT_trailing_stop_loss_trigger = -3

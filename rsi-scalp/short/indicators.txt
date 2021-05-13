@@ -1,0 +1,21 @@
+BB_candle_period = 900
+BB_length = 20
+BB_std = 2
+
+RSI_candle_period = 900
+RSI_length = 14
+
+RSI1_candle_period = 900
+RSI1_length = 14
+RSI1_offset = 1
+
+RSI2_candle_period = 900
+RSI2_length = 14
+RSI2_offset = 2
+
+EMA_candle_period = 900
+EMA_length = 200
+
+ATRPERCENTAGE_indicator = EMA
+ATRPERCENTAGE_candle_period = 3600
+ATRPERCENTAGE_length = 14
